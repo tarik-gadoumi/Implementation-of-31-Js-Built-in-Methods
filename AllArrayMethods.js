@@ -3,9 +3,9 @@
                         ******Iterating over collections
                               .eachFromEnd:"Extra"Requires-->  [nothing !]  
                               .each : "A"       --Requires-->  [nothing !]                             
-                              .map : "B"        --Requires-->  1 _each | 2 _push
-                              .filter : "C"     --Requires-->  1 _each | 2 _push
-                              .reduce : "D"     --Requires-->  1 _each
+                              .map : "B"        --Requires-->  1 _.each | 2 _.push
+                              .filter : "C"     --Requires-->  1 _.each | 2 _.push
+                              .reduce : "D"     --Requires-->  1 _.each
                         ******Searching
                               .findIndex : "E"  --Requires-->  1 _.each
                               .find : "F"       --Requires-->  1 _.each | 2 _.findIndex
@@ -21,7 +21,7 @@
                               .concat : "N"     --Requires-->  1 _.each | 2 _.push
                               .join : "O"       --Requires-->  1 _.each | 2 _.reduce
                               .reverse : "P"    --Requires-->  1 _.each | 2 _.push | 3 _.eachFromEnd
-                              .joinTxt:"Extra"  --Requires-->  1 _.each | 2 _.push | 3 _.shift | 4 _.concat | 5 _.reduce | 6 _.join | 7 _.splice | 8.split(?)
+                              .joinTxt:"Extra"  --Requires-->  1 _.each | 2 _.push | 3 _.shift | 4 _.concat | 5 _.reduce | 6 _.join | 7 _.splice | 8 .split(?)
                         ******Adding, removing, and appending values
                               .push :"Extra"    --Requires-->  1 _.each
                               .shift : "Q"      --Requires-->  1 _.each
@@ -35,11 +35,11 @@
                               .Keys : "Y"       --Requires-->  [nothing !]
                               .entries : "Z"    --Requires-->  [nothing !]
                         ******Other
-                              .call : "Extra"   --Requires--> ligne 298 to 349 
-                              .apply : "Extra"  --Requires--> ligne 349 to 374
-                              .bind : "Extra"   --Requires--> ligne 374 to 400
-                              .Debounce : "27"  --Requires--> ... later
-                              .sort : "29"      --Requires--> ... later
+                              .call : "Extra"   --Requires--> Function.prototype.callByTarik
+                              .apply : "Extra"  --Requires--> Function.prototype.applyByTarik
+                              .bind : "Extra"   --Requires--> Function.prototype.bindByTarik
+                              .Debounce : "27"  --Requires--> ... la flemme
+                              .sort : "29"      --Requires--> ... la flemme 
 
   */
 
