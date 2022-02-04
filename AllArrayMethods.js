@@ -1,39 +1,45 @@
 // The implementation of  every  JS method for Array :
-/*list Of methods in order :
+/*list Of methods  :
                         ******Iterating over collections
                               .eachFromEnd:"Extra"Requires-->  [nothing !]  
-                              .each : "A"       --Requires-->  [nothing !]                             
-                              .map : "B"        --Requires-->  1 _.each | 2 _.push
-                              .filter : "C"     --Requires-->  1 _.each | 2 _.push
-                              .reduce : "D"     --Requires-->  1 _.each
+                              .each :           --Requires-->  [nothing !]                             
+                              .map :            --Requires-->  1 _.each | 2 _.push
+                              .filter :         --Requires-->  1 _.each | 2 _.push
+                              .reduce :         --Requires-->  1 _.each
+                              
                         ******Searching
-                              .findIndex : "E"  --Requires-->  1 _.each
-                              .find : "F"       --Requires-->  1 _.each | 2 _.findIndex
-                              .indexOf : "G"    --Requires-->  1 _.each | 2 _.findIndex
-                              .lastIndexOf :"H" --Requires-->  1 _.each | 2 _.findIndex
-                              .every : "I"      --Requires-->  1 _.each
-                              .some : "J"       --Requires-->  1 _.each
-                              .includes : "K"   --Requires-->  1 _.each | 2 _.findeIndex |3 _.find
+                              .findIndex :      --Requires-->  1 _.each
+                              .find :           --Requires-->  1 _.each | 2 _.findIndex
+                              .indexOf :        --Requires-->  1 _.each | 2 _.findIndex
+                              .lastIndexOf :    --Requires-->  1 _.each | 2 _.findIndex
+                              .every :          --Requires-->  1 _.each
+                              .some :           --Requires-->  1 _.each
+                              .includes :       --Requires-->  1 _.each | 2 _.findeIndex |3 _.find
+                              
                         ******Flattening 
-                              .flat : "L"       --Requires-->  1 _.each | 2 _.push | 3 _.concat | 4 _.reduce
-                              .flatMap : "M"    --Requires-->  1 _.each | 2 _.push | 3 _.map | 4 _.flat
+                              .flat :           --Requires-->  1 _.each | 2 _.push | 3 _.concat | 4 _.reduce
+                              .flatMap :        --Requires-->  1 _.each | 2 _.push | 3 _.map | 4 _.flat
+                              
                         ******Joining, appending, and reversing arrays
-                              .concat : "N"     --Requires-->  1 _.each | 2 _.push
-                              .join : "O"       --Requires-->  1 _.each | 2 _.reduce
-                              .reverse : "P"    --Requires-->  1 _.each | 2 _.push | 3 _.eachFromEnd
+                              .concat :         --Requires-->  1 _.each | 2 _.push
+                              .join :           --Requires-->  1 _.each | 2 _.reduce
+                              .reverse :        --Requires-->  1 _.each | 2 _.push | 3 _.eachFromEnd
                               .joinTxt:"Extra"  --Requires-->  1 _.each | 2 _.push | 3 _.shift | 4 _.concat | 5 _.reduce | 6 _.join | 7 _.splice | 8 .split(?)
+                              
                         ******Adding, removing, and appending values
-                              .push :"Extra"    --Requires-->  1 _.each
+                              .push :           --Requires-->  1 _.each
                               .shift : "Q"      --Requires-->  1 _.each
                               .unshift : "R"    --Requires-->  1 _.each | 2 _.push | 3 _.concat
                               .slice : "S"      --Requires-->  1 _.each | 2 _.push
                               .splice : "T"     --Requires-->  1 _.each | 2 _.push | 3 _.shift | 3 _.concat
                               .pop : "U"        --Requires-->  [nothing !]
                               .fill : "W"       --Requires-->  1 _.each
+                              
                         ******With generators
                               .values : "X"     --Requires-->  [nothing !]
                               .Keys : "Y"       --Requires-->  [nothing !]
                               .entries : "Z"    --Requires-->  [nothing !]
+                              
                         ******Other
                               .call : "Extra"   --Requires--> Function.prototype.callByTarik
                               .apply : "Extra"  --Requires--> Function.prototype.applyByTarik
