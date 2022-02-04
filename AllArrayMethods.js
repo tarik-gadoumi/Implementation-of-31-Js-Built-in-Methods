@@ -3,33 +3,33 @@
                         ******Iterating over collections
                               .eachFromEnd:"Extra"Requires-->  [nothing !]  
                               .each : "A"       --Requires-->  [nothing !]                             
-                              .map : "B"        --Requires-->  1.each | 2.push
-                              .filter : "C"     --Requires-->  1.each | 2.push
-                              .reduce : "D"     --Requires-->  1.each
+                              .map : "B"        --Requires-->  1 _each | 2 _push
+                              .filter : "C"     --Requires-->  1 _each | 2 _push
+                              .reduce : "D"     --Requires-->  1 _each
                         ******Searching
-                              .findIndex : "E"  --Requires-->  1.each
-                              .find : "F"       --Requires-->  1.each | 2.findIndex
-                              .indexOf : "G"    --Requires-->  1.each | 2.findIndex
-                              .lastIndexOf :"H" --Requires-->  1.each | 2.findIndex
-                              .every : "I"      --Requires-->  1.each
-                              .some : "J"       --Requires-->  1.each
-                              .includes : "K"   --Requires-->  1.each | 2. findeIndex | 3.find
+                              .findIndex : "E"  --Requires-->  1 _.each
+                              .find : "F"       --Requires-->  1 _.each | 2 _.findIndex
+                              .indexOf : "G"    --Requires-->  1 _.each | 2 _.findIndex
+                              .lastIndexOf :"H" --Requires-->  1 _.each | 2 _.findIndex
+                              .every : "I"      --Requires-->  1 _.each
+                              .some : "J"       --Requires-->  1 _.each
+                              .includes : "K"   --Requires-->  1 _.each | 2 _.findeIndex |3 _.find
                         ******Flattening 
-                              .flat : "L"       --Requires-->  1.each | 2.push | 3.concat | 4.reduce
-                              .flatMap : "M"    --Requires-->  1.each | 2.push | 3.map | 4.flat
+                              .flat : "L"       --Requires-->  1 _.each | 2 _.push | 3 _.concat | 4 _.reduce
+                              .flatMap : "M"    --Requires-->  1 _.each | 2 _.push | 3 _.map | 4 _.flat
                         ******Joining, appending, and reversing arrays
-                              .concat : "N"     --Requires-->  1.each | 2.push
-                              .join : "O"       --Requires-->  1.each | 2.reduce
-                              .reverse : "P"    --Requires-->  1.each | 2.push | 3.eachFromEnd
-                              .joinTxt:"Extra"  --Requires-->  1.each | 2.push | 3.shift | 4.concat | 5. reduce | 6.join | 7.splice | 8.split(?)
+                              .concat : "N"     --Requires-->  1 _.each | 2 _.push
+                              .join : "O"       --Requires-->  1 _.each | 2 _.reduce
+                              .reverse : "P"    --Requires-->  1 _.each | 2 _.push | 3 _.eachFromEnd
+                              .joinTxt:"Extra"  --Requires-->  1 _.each | 2 _.push | 3 _.shift | 4 _.concat | 5 _.reduce | 6 _.join | 7 _.splice | 8.split(?)
                         ******Adding, removing, and appending values
-                              .push :"Extra"    --Requires-->  1.each
-                              .shift : "Q"      --Requires-->  1.each
-                              .unshift : "R"    --Requires-->  1.each | 2.push | 3.concat
-                              .slice : "S"      --Requires-->  1.each | 2.push
-                              .splice : "T"     --Requires-->  1.each | 2.push | 3.shift | 3.concat
+                              .push :"Extra"    --Requires-->  1 _.each
+                              .shift : "Q"      --Requires-->  1 _.each
+                              .unshift : "R"    --Requires-->  1 _.each | 2 _.push | 3 _.concat
+                              .slice : "S"      --Requires-->  1 _.each | 2 _.push
+                              .splice : "T"     --Requires-->  1 _.each | 2 _.push | 3 _.shift | 3 _.concat
                               .pop : "U"        --Requires-->  [nothing !]
-                              .fill : "W"       --Requires-->  1.each
+                              .fill : "W"       --Requires-->  1 _.each
                         ******With generators
                               .values : "X"     --Requires-->  [nothing !]
                               .Keys : "Y"       --Requires-->  [nothing !]
