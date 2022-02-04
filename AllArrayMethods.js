@@ -38,8 +38,8 @@
                               .call : "Extra"   --Requires--> Function.prototype.callByTarik
                               .apply : "Extra"  --Requires--> Function.prototype.applyByTarik
                               .bind : "Extra"   --Requires--> Function.prototype.bindByTarik
-                              .Debounce : "27"  --Requires--> ... la flemme
-                              .sort : "29"      --Requires--> ... la flemme 
+                              .Debounce : "27"  --Requires--> ... not yet
+                              .sort : "29"      --Requires--> ... not yet
 
   */
 
