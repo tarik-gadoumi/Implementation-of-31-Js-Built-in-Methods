@@ -80,7 +80,7 @@ _.eachFromEnd = function eachFromEnd(list, callback) {
     const newReversedArr = [];
     const keysReversedOfObj = _.eachFromEnd(keysOfObj, (v) => {
       return newReversedArr.push(v);
-    }); /*Recursivity Yeaah !*/
+    }); /*Recursivity ....*/
     for (let i = 0; i < newReversedArr.length; i++) {
       callback(list[newReversedArr[i]], newReversedArr[i], list);
     }
